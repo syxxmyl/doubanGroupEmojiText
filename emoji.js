@@ -2,15 +2,14 @@ var isShow = false;
 var comment = document.getElementsByClassName("comment-wrapper");
 var textArea = document.getElementById("last");
 
-var emojiCount = 2;
 var currentEmojiListID = 0;
-var emojiDataColNum = 2;
+var emojiDataColNum = 2; // 每行多少个表情包 //
+
 var emojiData = {}
 emojiData[0] = ['[叁叁_叫我美女宝]',
     '[叁叁_吃瓜]',
     '[叁叁_理发店]'
 ];
-
 emojiData[1] = ['[嘉然_mua]',
     '[嘉然_安详]',
     '[嘉然_暗中观察]'
@@ -19,17 +18,16 @@ emojiData[1] = ['[嘉然_mua]',
 var emojiImgSelector = ['"https://i0.hdslb.com/bfs/new_dyn/e7fb58dae8651b78666a97a964e394245858138.png"',
     '"https://i0.hdslb.com/bfs/emote/74ea9b89f8923df6a123cabe6053762b9e776387.png"'
 ];
-
 var emojiImgs = {}
 emojiImgs[0] = ['"https://i0.hdslb.com/bfs/new_dyn/e25201330974e4227009a588b4861cdd5858138.png"',
     '"https://i0.hdslb.com/bfs/album/42fff4f4aa4ba7ad5a7ee448f1a952a1a6753741.png"',
     '"https://i0.hdslb.com/bfs/album/101dbcd54aa6a6a5fc253ea9095748a65da7ce4a.png"'
 ];
-
 emojiImgs[1] = ['"https://i0.hdslb.com/bfs/emote/74ea9b89f8923df6a123cabe6053762b9e776387.png"',
     '"https://i0.hdslb.com/bfs/emote/312359401cc72c34fcea3654cdba42db0f9f3dd0.png"',
     '"https://i0.hdslb.com/bfs/emote/3acf0b43facfd0601f5ab88cca6e401aa4f5a02e.png"'
 ];
+
 var emojiEmDiv = document.createElement("div");
 var emojiEm = document.createElement("em");
 var emojiList = document.createElement("em");
@@ -66,13 +64,12 @@ emojiEm.addEventListener('click', () => {
             let emojili = document.getElementById("emojidata" + String(k));
             let emojival = emojili.alt;
             emojili.addEventListener('click', () => {
-                //let textArea = document.getElementById("last");
                 textArea.value += emojival;
 
             }, false)
         }
 
-        // 表情包列表头
+        // 表情包列表头 //
         for (let j = 0; j < emojiImgSelector.length; j++) {
             let emojili = document.getElementById("emojilist" + String(j));
             emojili.addEventListener('click', () => {
@@ -93,11 +90,9 @@ emojiEm.addEventListener('click', () => {
                     let emojili = document.getElementById("emojidata" + String(k));
                     let emojival = emojili.alt;
                     emojili.addEventListener('click', () => {
-                        //let textArea = document.getElementById("last");
                         console.log("emojidata.alt=" + emojival)
                         textArea.value += emojival;
                     }, false)
-
                 }
             }, false)
         }
