@@ -11,3 +11,5 @@
 emojiData           添加匹配文本
 emojiImgSelector    添加表情包头图链接
 emojiImgs           添加具体表情包链接
+emojiImgHeight      评论区展示高度
+emojiImgWidth       评论区展示宽度

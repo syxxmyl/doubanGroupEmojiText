@@ -152,6 +152,16 @@ emojiData[5] = ['[贝拉_OK]',
                 '[贝拉_我们是]',
                 ];
 
+emojiData[6] = ['[正组_乃0_NAIBI]',
+                '[正组_乐1_LEBI]',
+                '[正组_然10_RANBI]',
+                '[正组_拉50_BEIBI]',
+                '[正组_晚100_ZHUBI]',
+                '[正组_糖33_TANGBI]',
+                '[正组_哞哞哞_NIUBI]',
+                '[正组_随200_WINBI]',
+                ];
+
 //base64生成器：https://www.css-js.com/tools/base64.html
 var emojiImgSelector = ['"https://i0.hdslb.com/bfs/new_dyn/e7fb58dae8651b78666a97a964e394245858138.png"',
                         '"https://i0.hdslb.com/bfs/emote/770355925c296cf63736866a3531f1a0a9ba7b80.png"',
@@ -159,6 +169,8 @@ var emojiImgSelector = ['"https://i0.hdslb.com/bfs/new_dyn/e7fb58dae8651b78666a9
                         '"https://i0.hdslb.com/bfs/emote/d9bbe91ce3d4d7dff814191492b4f40f394ee69b.png"',
                         '"https://i0.hdslb.com/bfs/emote/2396821dee0bc52228a98b96e135f50ad8d43509.png"',
                         '"https://i0.hdslb.com/bfs/emote/d1af2753dee495d35f82e4a10158b08896a75f29.png"',
+                        '"https://img2.doubanio.com/view/group/sqxs/public/2b97411d29ef332.webp"',
+
                         ];
 
 var emojiImgs = {}
@@ -315,6 +327,99 @@ emojiImgs[5] = ['"https://i0.hdslb.com/bfs/emote/9f6437e2bf1c386160d1d7c68209383
                 '"https://i0.hdslb.com/bfs/emote/d1af2753dee495d35f82e4a10158b08896a75f29.png"'
                 ];
 
+emojiImgs[6] = ['"https://i0.hdslb.com/bfs/album/ed83f611e37dccc9a5d4e275b48948a698509681.jpg"',
+                '"https://i0.hdslb.com/bfs/album/d955042a97506d984526a2cb72db73ca1b006f3d.jpg"',
+                '"https://i0.hdslb.com/bfs/album/899aac2ad2bfa06fedfcad6008d68acdd8f98e06.jpg"',
+                '"https://i0.hdslb.com/bfs/album/0a2d602f676bc6d65a6962b9f00d170d9a76afd7.jpg"',
+                '"https://i0.hdslb.com/bfs/album/73fa165de694a2ee9ead0e682b0d5fdcd37cbe8f.jpg"',
+                '"https://i0.hdslb.com/bfs/album/e30052b4d41e3afe593ea16b466cad775926ee43.jpg"',
+                '"https://i0.hdslb.com/bfs/album/a459950fff6a75a2ec5a52813bd17467db473763.jpg"',
+                '"https://i0.hdslb.com/bfs/album/f47faff803a125653da8a1db00c8f7400d0d1142.jpg"'
+                ];
+
+// 评论区分辨率 //
+var emojiImgHeight = {}
+var emojiImgWidth = {}
+
+emojiImgHeight[0] = ['80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80'
+];
+emojiImgHeight[1] = ['80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+];
+emojiImgHeight[2] = ['80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+];
+emojiImgHeight[3] = ['80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+];
+emojiImgHeight[4] = ['80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+];
+emojiImgHeight[5] = ['80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+];
+emojiImgHeight[6] = ['120', '120', '120', '120', '120'
+                    , '120', '120', '120'
+];
+
+
+emojiImgWidth[0] = ['80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80'
+];
+emojiImgWidth[1] = ['80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+];
+emojiImgWidth[2] = ['80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+];
+emojiImgWidth[3] = ['80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+];
+emojiImgWidth[4] = ['80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+];
+emojiImgWidth[5] = ['80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+                    , '80', '80', '80', '80', '80'
+];
+emojiImgWidth[6] = ['220', '220', '220', '220', '220'
+                    , '220', '220', '220'
+];
+
 $("head").append("<style>em.bqbbutton {display: flex;justify-content: center;align-items: center;width: 70px;height: 100%;border: 1px solid #428bd4;border-radius: 4px;cursor: pointer;color: #ffffff;background-color: #428bd4;margin-left: auto;}</style>");
 $("head").append("<style>em.bqbbutton1 {display: flex;justify-content: center;align-items: center;width: 70px;height: 100%;border: 1px solid #628bd4;border-radius: 4px;cursor: pointer;color: #ffffff;background-color: #628bd4;margin-left: auto;}</style>");
 
@@ -335,7 +440,7 @@ $("head").append("<style>em.bqbbutton1 {display: flex;justify-content: center;al
             {
                 for(let j = 0; j < emojiImgs[i].length; j++)
                 {
-                    epih = epih.replaceAll(emojiData[i][j], "<img height=80 width=80 src=" + emojiImgs[i][j] + " alt=" + emojiData[i][j] + ">");
+                    epih = epih.replaceAll(emojiData[i][j], "<img height=" +emojiImgHeight[i][j] + " width=" + emojiImgWidth[i][j] + " src=" + emojiImgs[i][j] + " alt=" + emojiData[i][j] + ">");
                     
                 }
             }
