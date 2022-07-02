@@ -3,9 +3,9 @@
 
 
 
-[关注豆瓣正组谢谢喵]: https://www.douban.com/group/728957/
+关注豆瓣正组谢谢喵: https://www.douban.com/group/728957/
 
-[感谢大佬的帮助喵]: https://www.douban.com/people/243050994/
+感谢大佬的帮助喵: https://www.douban.com/people/243050994/
 
 ## 用法
 emojiData           添加匹配文本
